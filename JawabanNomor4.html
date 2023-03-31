@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jawaban Soal 4</title>
+</head>
+<body><div>
+  <h1>Pengecekan jumlah perulangan </h1>
+  </div>
+  <script>
+    let count = 0;
+
+  function showConfirmation() {
+  const result = confirm("Apakah anda mau mengulang?");
+  if (result) {
+    count++;
+    showConfirmation();
+  } else {
+    alert("Perulangan sudah dilakukan sebanyak " + count + " kali.");
+  }
+}
+
+showConfirmation();
+
+  </script>
+</body>
+</html>
